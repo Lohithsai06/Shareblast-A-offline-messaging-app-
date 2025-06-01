@@ -1,0 +1,141 @@
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  height: 70px;
+  z-index: 10;
+}
+
+.chat-app.dark .chat-header {
+  background-color: #1a1a2e;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+.chat-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.chat-room-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6c5ce7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.chat-room-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.chat-app.dark .chat-room-name {
+  color: #f5f5f5;
+}
+
+.chat-room-users {
+  font-size: 12px;
+  color: #888;
+}
+
+.chat-app.dark .chat-room-users {
+  color: #aaa;
+}
+
+.chat-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.chat-app.dark .action-btn {
+  color: #f5f5f5;
+}
+
+.action-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-app.dark .action-btn:hover {
+  background-color: #2a2a3a;
+}
+
+.logout-btn {
+  color: #e74c3c;
+}
+
+.logout-btn:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.chat-app.dark .logout-btn {
+  color: #ff6b6b;
+}
+
+.chat-app.dark .logout-btn:hover {
+  background-color: rgba(255, 107, 107, 0.2);
+}
+
+@media (max-width: 768px) {
+  .chat-header {
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    height: 60px;
+  }
+  
+  .chat-user-info {
+    margin-left: 30px; /* Make room for the hamburger menu */
+  }
+  
+  .chat-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-user-info {
+    font-size: 0.9rem;
+  }
+  
+  .chat-room-users {
+    display: none; /* Hide user count on very small screens */
+  }
+  
+  .action-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}
