@@ -101,7 +101,6 @@ npm start
 cd client
 npm run dev
 
-<br/>
 📱📡 USAGE
 Ensure all devices are connected to the same WiFi
 
@@ -111,14 +110,13 @@ Launch the app on each device
 
 Start messaging — offline & real-time!
 
-<br/>
 🧠🛡️ LINTING & TYPESCRIPT (Optional but recommended)
 Upgrade your project with TypeScript and better linting:
 
 👉 Use Vite + React + TypeScript template
 👉 Integrate typescript-eslint for smart type-aware rules
 
-<br/>
+
 🤝🛠️ CONTRIBUTING
 We ❤️ contributions from the community!
 
@@ -130,8 +128,8 @@ We ❤️ contributions from the community!
 
 🚀 Submit a Pull Request
 
-<br/>
 📄 LICENSE
 📝 Licensed under the MIT License
 
-<div align="center"> <b>Made with 💜 by the Share Blast Team</b><br/> <sub>Chat offline. Share fast. Blast messages across your LAN.</sub> </div> ```
+Made with 💜 by the Share Blast Team
+Chat offline. Share fast. Blast messages across your LAN✨
